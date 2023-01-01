@@ -1,0 +1,89 @@
+<h1 class="mb-16">Cards</h1>
+<hr />
+
+<h3 class="mt-32 mb-16">Card Example</h3>
+
+<lx-card title="Card title">
+  <p>Card body</p>
+  <p>Card body</p>
+  <p>Card body</p>
+</lx-card>
+<textarea disabled rows="5" class="full-width my-16">
+<lx-card title="Card title">
+    <p>Card body</p>
+    <p>Card body</p>
+    <p>Card body</p>
+</lx-card></textarea
+>
+
+<h3 class="mt-32 mb-16">Simple card</h3>
+
+<lx-card>
+  <p>Card body</p>
+  <p>Card body</p>
+  <p>Card body</p>
+</lx-card>
+<textarea disabled rows="5" class="full-width my-16">
+<lx-card>
+     <p>Card body</p>
+     <p>Card body</p>
+    <p>Card body</p>
+</lx-card></textarea
+>
+
+<h3 class="mt-32 mb-16">Hoverable card</h3>
+
+<lx-card title="Card title" [hoverable]="true">
+  <p>Card body</p>
+  <p>Card body</p>
+  <p>Card body</p>
+</lx-card>
+<textarea disabled rows="5" class="full-width my-16">
+<lx-card title="Card title" [hoverable]="true">
+    <p>Card body</p>
+    <p>Card body</p>
+    <p>Card body</p>
+</lx-card></textarea
+>
+
+<h3 class="mt-32 mb-16">Loading card</h3>
+
+<lx-card [loading]="true">
+  <p>Card body</p>
+  <p>Card body</p>
+  <p>Card body</p>
+</lx-card>
+<textarea disabled rows="5" class="full-width my-16">
+<lx-card [loading]="true">
+    <p>Card body</p>
+    <p>Card body</p>
+    <p>Card body</p>
+</lx-card></textarea
+>
+
+<table class="doc-table mb-64">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><span>[title]</span></td>
+    <td>title of the card</td>
+    <td><span>string</span></td>
+    <td><span>-</span></td>
+  </tr>
+  <tr>
+    <td><span>[loading]</span></td>
+    <td>loading status</td>
+    <td><span>boolean</span></td>
+    <td><span>false</span></td>
+  </tr>
+  <tr>
+    <td><span>[hoverable]</span></td>
+    <td>is hoverable?</td>
+    <td><span>boolean</span></td>
+    <td><span>false</span></td>
+  </tr>
+</table>

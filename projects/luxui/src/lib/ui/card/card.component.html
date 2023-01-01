@@ -1,0 +1,12 @@
+<div class="card {{ hoverable ? 'hover' : '' }}">
+  <ng-container *ngIf="!loading"
+    ><div class="card-header" *ngIf="title">{{ title }}</div>
+    <div class="card-body"><ng-content></ng-content></div
+  ></ng-container>
+  <ng-container *ngIf="loading">
+    <div class="card-body">
+      <div class="loading-block"></div>
+      <div class="loading-block"></div>
+    </div>
+  </ng-container>
+</div>

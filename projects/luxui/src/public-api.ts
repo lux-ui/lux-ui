@@ -12,3 +12,9 @@ export * from './lib/ui/menu/menu.module';
 
 export * from './lib/ui/menu/menu-item/menu-item.component';
 export * from './lib/ui/menu/menu-item/menu-item.module';
+
+export * from './lib/ui/card/card.component';
+export * from './lib/ui/card/card.module';
+
+export * from './lib/ui/carousel/carousel.component';
+export * from './lib/ui/carousel/carousel.module';

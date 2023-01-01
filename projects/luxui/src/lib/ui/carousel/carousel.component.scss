@@ -1,0 +1,14 @@
+.carousel {
+  width: 100%;
+  border: 1px solid red;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+:host ::ng-deep [lx-carouse-slide] {
+  display: block;
+}
