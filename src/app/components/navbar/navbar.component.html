@@ -1,0 +1,31 @@
+<nav class="navbar">
+  <div class="navbar-content">
+    <h3 class="navbar__logo" [routerLink]="'/'">Lux<sup>UI</sup></h3>
+    <ul class="navbar-nav">
+      <li class="navbar-nav__element">
+        <a [routerLink]="'/components'">Components</a>
+      </li>
+      <li class="navbar-nav__element">
+        <a [routerLink]="'/templates'">Templates</a>
+      </li>
+      <li class="navbar-nav__element">
+        <a [routerLink]="'/documentation'">Documentation</a>
+      </li>
+    </ul>
+    <span class="navbar__menu-btn" (click)="toggleModal(true)">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+      </svg>
+    </span>
+  </div>
+</nav>
+<app-rwd-menu
+  (open)="toggleModal($event)"
+  [openModal]="openModal"
+></app-rwd-menu>

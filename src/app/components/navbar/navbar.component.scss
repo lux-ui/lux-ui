@@ -1,0 +1,72 @@
+@import "settings/colors";
+@import "mixins/mixins";
+
+.navbar {
+  background: $color-primary-500;
+  padding: 1rem 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-content {
+    @include container-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar__logo {
+      font-size: 28px;
+      color: $color-gray-100;
+      cursor: pointer;
+
+      sup {
+        color: darken($color-secondary-500, 15%);
+        border: 2px solid $color-secondary-500;
+        font-size: 18px;
+        padding: 0 0.25rem;
+        margin-left: 0.25rem;
+        border-radius: 5px;
+      }
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      display: flex;
+      gap: 2.5rem;
+
+      @media screen and (max-width: 900px) {
+        gap: 1.5rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+
+      .navbar-nav__element {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: $color-gray-100;
+          font-weight: 700;
+          text-decoration: none;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            color: $color-secondary-500;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar__menu-btn {
+    cursor: pointer;
+    fill: #fff;
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+}
