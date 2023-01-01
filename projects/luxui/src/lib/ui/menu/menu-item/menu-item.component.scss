@@ -1,0 +1,55 @@
+@import "../../../../assets/styles/main.scss";
+
+a,
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 8px 0;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($color-primary-500, 5%);
+  }
+
+  svg:first-of-type,
+  i:first-of-type {
+    fill: $color-secondary-300;
+    margin-left: auto;
+  }
+
+  //   svg:nth-of-type(2),
+  //   i:nth-of-type(2) {
+
+  //   }
+}
+
+:host ::ng-deep ol {
+  margin-left: 14px;
+  a {
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px 0;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten($color-primary-500, 5%);
+    }
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  background: lighten($color-primary-500, 3%);
+  border-radius: 5px;
+  &.active {
+    max-height: 300px;
+    display: block;
+  }
+}

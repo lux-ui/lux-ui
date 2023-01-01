@@ -1,0 +1,15 @@
+main {
+  display: flex;
+  min-height: calc(100vh - 73px);
+  overflow-x: hidden;
+}
+nav {
+  width: 300px;
+  font-size: 20px;
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+}

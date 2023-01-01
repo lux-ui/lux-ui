@@ -1,0 +1,45 @@
+@import "../../../assets/styles/main.scss";
+
+$background-color: $color-primary-500;
+$hover-background-color: lighten($color-primary-500, 5%);
+$text-color: $color-secondary-300;
+$hover-text-color: $color-secondary-300;
+
+.menu {
+  min-width: 200px;
+  max-width: 275px;
+  min-height: 100%;
+  background: $color-primary-500;
+  color: $text-color;
+  position: relative;
+  box-shadow: 0 3px 8px rgba($background-color, 0.9);
+}
+
+:host ::ng-deep .menu-logo {
+  text-decoration: none !important;
+  font-size: 20px;
+  font-weight: bold;
+  // padding: 16px;
+}
+
+:host ::ng-deep .menu-elements {
+  padding: 8px;
+}
+
+:host ::ng-deep .menu-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  // padding: 14px;
+  background: $hover-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  svg,
+  i {
+    margin-right: 8px;
+    fill: $text-color;
+  }
+}

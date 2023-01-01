@@ -1,1 +1,36 @@
-<p>rate-page works!</p>
+<!-- <h1 class="mb-16">Rate</h1>
+<hr />
+
+<h3 class="mt-16">Basic Rates</h3>
+<app-rate [stars]="0" [lxCount]="5" (emitValue)="setValue($event)"></app-rate>
+<p class="p1">{{ rate || 0 }}</p>
+<textarea disabled rows="1" class="full-width my-8">
+<app-rate [stars]="0" [lxCount]="5" (emitValue)="setValue($event)"></app-rate></textarea
+> -->
+
+<table class="doc-table mb-64">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><span>[lxCount]</span></td>
+    <td>amount of available stars</td>
+    <td><span>number</span></td>
+    <td><span>5</span></td>
+  </tr>
+  <tr>
+    <td><span>[stars]</span></td>
+    <td>amount of stars selected by default</td>
+    <td><span>number</span></td>
+    <td><span>0</span></td>
+  </tr>
+  <tr>
+    <td><span>(emitValue)</span></td>
+    <td>return value callback</td>
+    <td><span>EventEmitter&lt;number></span></td>
+    <td><span>-</span></td>
+  </tr>
+</table>
