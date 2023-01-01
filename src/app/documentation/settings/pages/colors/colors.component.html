@@ -1,0 +1,15 @@
+<h1>Colors</h1>
+<table>
+  <tr class="m-32" *ngFor="let palette of colors">
+    <td
+      class="p-8"
+      *ngFor="let color of palette"
+      [style.background]="color.color"
+      [style.color]="color.textColor"
+    >
+      <span class="m-x8">{{ color.text }}</span
+      ><span class="m-x8">$color-{{ color.text.replace(" ", "-") }}</span
+      ><span class="m-x8">{{ color.color }}</span>
+    </td>
+  </tr>
+</table>

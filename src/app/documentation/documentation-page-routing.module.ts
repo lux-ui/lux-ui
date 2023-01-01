@@ -1,3 +1,5 @@
+import { SettingsRoutingModule } from './settings/settings-routing.module';
+import { ElementsRoutingModule } from './elements/elements-routing.module';
 import { DocumentationPageComponent } from './documentation-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +13,14 @@ const routes: Routes = [
       {
         path: 'ui',
         loadChildren: () => UiRoutingModule,
+      },
+      {
+        path: 'elements',
+        loadChildren: () => ElementsRoutingModule,
+      },
+      {
+        path: 'settings',
+        loadChildren: () => SettingsRoutingModule,
       },
     ],
   },

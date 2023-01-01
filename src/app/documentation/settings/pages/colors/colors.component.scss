@@ -1,0 +1,9 @@
+table {
+  display: flex;
+  flex-wrap: wrap;
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
