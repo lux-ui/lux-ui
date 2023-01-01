@@ -1,0 +1,19 @@
+$color-fill: #ffcc00;
+$color-empty: #ccc;
+
+.stars-wrapper {
+  display: inline-block;
+
+  .stars {
+    display: flex;
+
+    .star {
+      margin: 0 3px;
+      cursor: pointer;
+    }
+
+    svg {
+      fill: $color-empty;
+    }
+  }
+}
