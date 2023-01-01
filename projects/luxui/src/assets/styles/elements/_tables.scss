@@ -1,0 +1,47 @@
+@import "src/app/luxui/assets/styles/settings/_colors.scss";
+
+.doc-table {
+  width: 100%;
+  font-family: monospace;
+
+  th {
+    text-align: left;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    background: $color-gray-300;
+    color: $color-gray-700;
+  }
+
+  td {
+    padding: 14px;
+
+    &:first-of-type {
+      span {
+        display: inline-block;
+        background: $color-gray-300;
+        padding: 5px;
+        color: $color-gray-700;
+        font-weight: 500;
+      }
+    }
+    &:nth-of-type(3) {
+      span {
+        display: inline-block;
+        background: $color-gray-300;
+        padding: 5px;
+        color: $color-error-700;
+        font-weight: 500;
+      }
+    }
+    &:last-of-type {
+      span {
+        display: inline-block;
+        background: $color-gray-300;
+        padding: 5px;
+        color: $color-gray-700;
+        font-weight: 500;
+      }
+    }
+  }
+}

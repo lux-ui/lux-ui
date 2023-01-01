@@ -1,0 +1,10 @@
+@import "../settings/colors";
+
+@mixin outline(
+  $outline-width: 4px,
+  $outline-offset: 1px,
+  $outline-color: $color-primary-400
+) {
+  outline: $outline-width solid $outline-color;
+  outline-offset: $outline-offset;
+}

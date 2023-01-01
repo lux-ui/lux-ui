@@ -1,0 +1,5 @@
+@import "../settings/colors";
+
+@mixin section-shadow() {
+  box-shadow: 6px 6px 5px $color-blue-200;
+}

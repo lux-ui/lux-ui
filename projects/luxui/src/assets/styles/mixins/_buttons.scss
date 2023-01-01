@@ -1,0 +1,170 @@
+@import "../settings/colors";
+@import "../shared/cursors";
+@import "../mixins/bg-color-text-color";
+@import "../mixins/outline";
+@import "../mixins/spinner";
+
+@mixin base-button() {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+@mixin disabled() {
+  @extend .not-allowed;
+  background: $color-gray-300;
+  color: $color-gray-600;
+
+  &:hover {
+    background: $color-gray-300;
+    color: $color-gray-600;
+  }
+
+  &:active {
+    background: $color-gray-300 !important;
+    color: $color-gray-600;
+    box-shadow: none;
+  }
+
+  i {
+    color: $color-gray-500 !important;
+  }
+}
+
+@mixin button(
+  $default-bg-color,
+  $default-text-color,
+  $hover-bg-color,
+  $hover-text-color,
+  $active-bg-color,
+  $active-text-color,
+  $active-box-shadow-color,
+  $loading-bg-color,
+  $loading-text-color,
+  $loader-color,
+  $focus-bg-color,
+  $focus-text-color
+) {
+  @include bg-color-text-color($default-bg-color, $default-text-color);
+
+  &:hover {
+    @include bg-color-text-color($hover-bg-color, $hover-text-color);
+  }
+
+  &:not(.disabled):not(.loading):focus-visible {
+    @include bg-color-text-color($focus-bg-color, $focus-text-color);
+  }
+
+  &:active {
+    @include bg-color-text-color(
+      $active-bg-color !important,
+      $active-text-color
+    );
+    box-shadow: 0 0 6px $active-box-shadow-color;
+    outline: none !important;
+  }
+
+  &[loading] {
+    @include bg-color-text-color(
+      $loading-bg-color !important,
+      $loading-text-color !important
+    );
+    @include spinner($loader-color);
+  }
+
+  &:disabled {
+    @include disabled;
+  }
+}
+
+@mixin fab-button(
+  $default-bg-color,
+  $default-icon-color,
+  $default-drop-shadow-color,
+  $hover-bg-color,
+  $active-bg-color,
+  $active-drop-shadow-color,
+  $disable-bg-color,
+  $disable-icon-color
+) {
+  color: $default-icon-color;
+  filter: drop-shadow(2px 2px 2px $default-drop-shadow-color);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $default-bg-color;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:focus-visible {
+    @include outline;
+    filter: drop-shadow(2px 2px 2px $default-drop-shadow-color);
+  }
+
+  &:active {
+    filter: drop-shadow(0 0 6px $active-drop-shadow-color);
+    outline: none !important;
+  }
+
+  &:disabled {
+    @extend .not-allowed;
+    filter: drop-shadow(2px 2px 2px $default-drop-shadow-color) !important;
+
+    &::before {
+      background-color: $disable-bg-color !important;
+    }
+
+    i {
+      color: $disable-icon-color !important;
+    }
+  }
+}
+
+@mixin button-disabled() {
+  @include bg-color-text-color(
+    $color-gray-300 !important,
+    $color-gray-600 !important
+  );
+  box-shadow: unset;
+  @extend .not-allowed;
+}
+
+@mixin icon-button(
+  $default-icon-color,
+  $hover-icon-color,
+  $active-icon-color,
+  $active-drop-shadow-color,
+  $focus-icon-color
+) {
+  i {
+    border: 3px solid red;
+    color: $default-icon-color;
+  }
+
+  &:hover {
+    i {
+      color: $hover-icon-color;
+    }
+  }
+
+  &:active {
+    outline: none !important;
+
+    i {
+      filter: drop-shadow(0 0 2px $active-drop-shadow-color);
+      color: $active-icon-color !important;
+    }
+  }
+
+  &:focus-visible {
+    @include outline(2px);
+
+    i {
+      color: $focus-icon-color;
+    }
+  }
+}

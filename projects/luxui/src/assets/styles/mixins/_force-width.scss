@@ -1,0 +1,4 @@
+@mixin force-width($width) {
+  min-width: $width;
+  max-width: $width;
+}

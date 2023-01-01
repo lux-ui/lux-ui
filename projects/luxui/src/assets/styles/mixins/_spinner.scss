@@ -1,0 +1,47 @@
+@mixin spinner($color, $width: 20px, $border-width: 3px) {
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+
+  &::before {
+    $offset: calc(50% - calc(#{($width + ($border-width * 2))} / 2));
+
+    content: '';
+    position: absolute;
+    top: $offset;
+    left: $offset;
+    width: $width;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: $border-width solid $color;
+    animation: spinning-1 .8s infinite linear alternate, spinning-2 1.6s infinite linear;
+  }
+}
+
+@keyframes spinning-1 {
+  0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+  12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+  25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+  50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+  62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+  75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+  100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+
+@keyframes spinning-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg);
+  }
+}

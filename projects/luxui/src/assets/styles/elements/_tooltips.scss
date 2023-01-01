@@ -1,0 +1,54 @@
+@import "../mixins/bg-color-text-color";
+@import "../settings/colors";
+
+// .tooltip {
+//   position: absolute;
+//   z-index: 9999;
+//   top: 0;
+//   left: 0;
+//   @extend .p1;
+//   filter: drop-shadow(2px 2px 2px $color-blue-400);
+//   padding: 8px 16px;
+//   transform: translateY(-20px);
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     left: var(--triangle-offset-left);
+//     margin: 0 16px;
+//   }
+
+//   &.top {
+//     &::after {
+//       border-left: 18px solid transparent;
+//       border-right: 18px solid transparent;
+//       border-top: 18px solid;
+//       bottom: -18px;
+//     }
+//   }
+
+//   &.bottom {
+//     &::after {
+//       border-left: 18px solid transparent;
+//       border-right: 18px solid transparent;
+//       border-bottom: 18px solid;
+//       top: -18px;
+//     }
+//   }
+
+//   &.dark {
+//     @include bg-color-text-color($color-blue-500, $color-gray-100);
+
+//     &::after {
+//       border-top-color: $color-blue-500;
+//     }
+//   }
+
+//   &.light {
+//     @include bg-color-text-color($color-gray-100, $color-blue-500);
+
+//     &::after {
+//       border-bottom-color: $color-gray-100;
+//     }
+//   }
+// }
