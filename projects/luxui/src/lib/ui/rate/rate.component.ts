@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-rate',
+  selector: 'lx-rate',
   templateUrl: './rate.component.html',
-  styleUrls: ['./rate.component.css']
+  styleUrls: ['./rate.component.css'],
 })
 export class RateComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
