@@ -3,13 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-calendar-page',
   templateUrl: './calendar-page.component.html',
-  styleUrls: ['./calendar-page.component.scss']
+  styleUrls: ['./calendar-page.component.scss'],
 })
 export class CalendarPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  changeDate(date: Date): void {
+    console.log(date);
   }
-
 }

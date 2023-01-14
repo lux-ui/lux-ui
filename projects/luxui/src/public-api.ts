@@ -21,3 +21,9 @@ export * from './lib/ui/carousel/carousel.module';
 
 export * from './lib/ui/divider/divider.component';
 export * from './lib/ui/divider/divider.module';
+
+export * from './lib/ui/calendar/calendar.component';
+export * from './lib/ui/calendar/calendar.module';
+
+export * from './lib/ui/select/select.component';
+export * from './lib/ui/select/select.module';
