@@ -1,0 +1,23 @@
+:host {
+  width: 100%;
+  position: relative;
+  display: block;
+
+  &:before {
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    border: 1px solid #eee;
+  }
+}
+
+span {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 4px 20px;
+  background: #fff;
+}

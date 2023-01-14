@@ -6,6 +6,9 @@ import { RatePageComponent } from './pages/rate-page/rate-page.component';
 import { CoreModule as LuxUiModule } from 'projects/luxui/src/public-api';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { RouterModule } from '@angular/router';
+import { DividerPageComponent } from './pages/divider-page/divider-page.component';
+import { SelectPageComponent } from './pages/select-page/select-page.component';
+import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { RouterModule } from '@angular/router';
     CardsPageComponent,
     MenuPageComponent,
     CarouselPageComponent,
+    DividerPageComponent,
+    SelectPageComponent,
+    CalendarPageComponent,
   ],
   imports: [CommonModule, LuxUiModule, RouterModule],
 })

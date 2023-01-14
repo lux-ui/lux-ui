@@ -1,3 +1,6 @@
+import { CalendarModule } from './../ui/calendar/calendar.module';
+import { SelectModule } from './../ui/select/select.module';
+import { DividerModule } from './../ui/divider/divider.module';
 import { CarouselModule } from './../ui/carousel/carousel.module';
 import { CardModule } from './../ui/card/card.module';
 import { RateModule } from './../ui/rate/rate.module';
@@ -15,7 +18,19 @@ import { CommonModule } from '@angular/common';
     RateModule,
     CardModule,
     CarouselModule,
+    DividerModule,
+    SelectModule,
+    CalendarModule,
   ],
-  exports: [MenuItemModule, MenuModule, RateModule, CardModule, CarouselModule],
+  exports: [
+    MenuItemModule,
+    MenuModule,
+    RateModule,
+    CardModule,
+    CarouselModule,
+    DividerModule,
+    SelectModule,
+    CalendarModule,
+  ],
 })
 export class CoreModule {}

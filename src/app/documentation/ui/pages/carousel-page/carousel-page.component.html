@@ -3,17 +3,164 @@
 
 <h3 class="mt-32 mb-16">Carousel Example</h3>
 
-<lx-carousel>
-  <div lx-carouse-slide>
-    <h2>1</h2>
-  </div>
-  <div lx-carouse-slide>
-    <h2>2</h2>
-  </div>
-  <div lx-carouse-slide>
-    <h2>3</h2>
-  </div>
-  <div lx-carouse-slide>
-    <h2>4</h2>
-  </div></lx-carousel
+<h2>Basic Example</h2>
+<div style="width: 600px; margin: 0 auto">
+  <lx-carousel>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+        alt="pic"
+      />
+    </li>
+  </lx-carousel>
+</div>
+<textarea disabled rows="22" class="full-width my-8">
+    <lx-carousel>
+      <li class="carousel__slide" #slide>
+        <img
+          src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+          alt="pic"
+        />
+      </li>
+      <li class="carousel__slide" #slide>
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+          alt="pic"
+        />
+      </li>
+      <li class="carousel__slide" #slide>
+        <img
+          src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+          alt="pic"
+        />
+      </li>
+    </lx-carousel></textarea
 >
+
+<h2>Animation Types</h2>
+
+<div style="margin: 0 auto; width: 600px">
+  <h3>Blink</h3>
+  <lx-carousel lxAnimation="blink">
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+        alt="pic"
+      />
+    </li>
+  </lx-carousel>
+</div>
+
+<textarea disabled rows="20" class="full-width my-8">
+      <lx-carousel lxAnimation="blink">
+        <li class="carousel__slide" #slide>
+          <img
+            src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+            alt="pic"
+          />
+        </li>
+        <li class="carousel__slide" #slide>
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+            alt="pic"
+          />
+        </li>
+        <li class="carousel__slide" #slide>
+          <img
+            src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+            alt="pic"
+          />
+        </li>
+      </lx-carousel></textarea
+>
+
+<div style="margin: 0 auto; width: 600px">
+  <h3>Slide</h3>
+  <lx-carousel lxAnimation="slide">
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+        alt="pic"
+      />
+    </li>
+  </lx-carousel>
+</div>
+<textarea disabled rows="20" class="full-width my-8">
+  <lx-carousel lxAnimation="slide">
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/688/947/718/nature-full-hd-image-1920x1080-wallpaper-preview.jpg"
+        alt="pic"
+      />
+    </li>
+    <li class="carousel__slide" #slide>
+      <img
+        src="https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-HD-Image-Nature-Download.jpg"
+        alt="pic"
+      />
+    </li>
+  </lx-carousel></textarea
+>
+
+<table class="doc-table mb-64">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Default</th>
+  </tr>
+  <tr *ngFor="let prop of props">
+    <td>
+      <span>{{ prop.name }}</span>
+    </td>
+    <td>{{ prop.desc }}</td>
+    <td>
+      <span>{{ prop.type }}</span>
+    </td>
+    <td>
+      <span>{{ prop.default }}</span>
+    </td>
+  </tr>
+</table>

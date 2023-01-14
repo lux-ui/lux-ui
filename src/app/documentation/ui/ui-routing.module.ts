@@ -1,3 +1,5 @@
+import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
+import { DividerPageComponent } from './pages/divider-page/divider-page.component';
 import { CarouselPageComponent } from './pages/carousel-page/carousel-page.component';
 import { RatePageComponent } from './pages/rate-page/rate-page.component';
 import { NgModule } from '@angular/core';
@@ -10,6 +12,8 @@ const routes: Routes = [
   { path: 'cards', component: CardsPageComponent },
   { path: 'menu', component: MenuPageComponent },
   { path: 'carousel', component: CarouselPageComponent },
+  { path: 'divider', component: DividerPageComponent },
+  { path: 'calendar', component: CalendarPageComponent },
 ];
 
 @NgModule({

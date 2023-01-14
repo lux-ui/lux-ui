@@ -1,0 +1,25 @@
+@import "../../../assets/styles/main.scss";
+
+.calendar-wrapper {
+  .week-days {
+    display: flex;
+
+    &__day {
+      width: 25px;
+      height: 25px;
+      border-radius: 4px;
+      margin: 4px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-400;
+        color: $color-gray-100;
+      }
+    }
+  }
+}

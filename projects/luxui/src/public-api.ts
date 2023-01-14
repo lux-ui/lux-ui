@@ -18,3 +18,6 @@ export * from './lib/ui/card/card.module';
 
 export * from './lib/ui/carousel/carousel.component';
 export * from './lib/ui/carousel/carousel.module';
+
+export * from './lib/ui/divider/divider.component';
+export * from './lib/ui/divider/divider.module';

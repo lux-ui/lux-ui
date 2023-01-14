@@ -8,18 +8,20 @@
 <section class="carousel" aria-label="Gallery">
   <div class="carousel-wrapper">
     <ol class="carousel__viewport" #carousel>
-      <li class="carousel__slide" *ngFor="let item of [1, 2, 3, 4]; let i">
+      <ng-content></ng-content>
+      <!-- <li class="carousel__slide" *ngFor="let item of slides; let i">
         <div class="carousel__snapper">{{ item }}</div>
-      </li>
+      </li> -->
     </ol>
   </div>
-  <div class="carousel-controlls">
+  <div class="carousel-controls" *ngIf="lxNav">
     <button class="icon-button" (click)="changeSlide(carousel, 'left')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="24"
-        height="24"
+        width="40"
+        height="40"
+        fill="#fff"
       >
         <path fill="none" d="M0 0h24v24H0z" />
         <path
@@ -31,8 +33,9 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        width="24"
-        height="24"
+        width="40"
+        height="40"
+        fill="#fff"
       >
         <path fill="none" d="M0 0h24v24H0z" />
         <path
@@ -41,9 +44,9 @@
       </svg>
     </button>
   </div>
-  <aside class="carousel__navigation">
+  <aside *ngIf="lxTabs" class="carousel__navigation nav-{{ lxTabsPosition }}">
     <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item" *ngFor="let item of [1, 2, 3, 4]">
+      <li class="carousel__navigation-item" *ngFor="let item of tabs">
         <button
           class="carousel__navigation-button {{
             currIndex === item - 1 ? 'active' : ''
