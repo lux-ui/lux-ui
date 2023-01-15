@@ -27,3 +27,6 @@ export * from './lib/ui/calendar/calendar.module';
 
 export * from './lib/ui/select/select.component';
 export * from './lib/ui/select/select.module';
+
+export * from './lib/ui/progress/progress.component';
+export * from './lib/ui/progress/progress.module';

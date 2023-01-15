@@ -8,6 +8,7 @@ import { MenuItemModule } from './../ui/menu/menu-item/menu-item.module';
 import { MenuModule } from './../ui/menu/menu.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProgressModule } from '../ui/progress/progress.module';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
     DividerModule,
     SelectModule,
     CalendarModule,
+    ProgressModule,
   ],
   exports: [
     MenuItemModule,
@@ -30,6 +32,7 @@ import { CommonModule } from '@angular/common';
     DividerModule,
     SelectModule,
     CalendarModule,
+    ProgressModule,
   ],
 })
 export class CoreModule {}

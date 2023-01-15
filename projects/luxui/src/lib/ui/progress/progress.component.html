@@ -1,0 +1,18 @@
+<div
+  class="progress"
+  #progress
+  style="--percent: {{ lxPercent }}%; --color: {{ lxColor }}"
+></div>
+
+<span
+  class="percent-tooltip"
+  style="--percent: {{ lxPercent }}%; --color: {{ lxColor }}"
+  *ngIf="displayPercent && displayType === 'tooltip'"
+  >{{ lxPercent }}%</span
+>
+
+<span
+  class="percent-display"
+  *ngIf="displayPercent && displayType !== 'tooltip'"
+  >{{ lxPercent }}%</span
+>

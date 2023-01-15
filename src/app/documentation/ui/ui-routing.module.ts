@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
+import { ProgressPageComponent } from './pages/progress-page/progress-page.component';
 
 const routes: Routes = [
   { path: 'rate', component: RatePageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'carousel', component: CarouselPageComponent },
   { path: 'divider', component: DividerPageComponent },
   { path: 'calendar', component: CalendarPageComponent },
+  { path: 'progress', component: ProgressPageComponent },
 ];
 
 @NgModule({

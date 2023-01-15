@@ -1,0 +1,60 @@
+<h2>Progress Bar</h2>
+<hr class="mb-64" />
+<div class="my-32">
+  <h3>Basic Example</h3>
+  <lx-progress [lxPercent]="50"></lx-progress>
+
+  <textarea disabled rows="1" class="full-width my-8">
+  <lx-progress [lxPercent]="50"></lx-progress></textarea
+  >
+</div>
+<div class="my-32">
+  <h3>Example with % display</h3>
+  <lx-progress [lxPercent]="50" [displayPercent]="true"></lx-progress>
+  <textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="50" [displayPercent]="true"></lx-progress></textarea
+  >
+</div>
+<div class="my-32">
+  <h3>Example with tooltip % display</h3>
+  <lx-progress
+    [lxPercent]="42"
+    [displayPercent]="true"
+    displayType="tooltip"
+  ></lx-progress>
+  <textarea disabled rows="5" class="full-width my-8">
+    <lx-progress
+    [lxPercent]="42"
+    [displayPercent]="true"
+    displayType="tooltip"
+  ></lx-progress></textarea
+  >
+</div>
+<div class="my-32">
+  <h3>Different progress status</h3>
+  <p>Primary</p>
+  <lx-progress [lxPercent]="42" lxColor="primary"></lx-progress>
+  <textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="42" lxColor="primary"></lx-progress></textarea
+  >
+  <p>Error</p>
+  <lx-progress [lxPercent]="42" lxColor="error"></lx-progress
+  ><textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="42" lxColor="error"></lx-progress></textarea
+  >
+  <p>Success</p>
+  <lx-progress [lxPercent]="42" lxColor="success"></lx-progress>
+  <textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="42" lxColor="success"></lx-progress></textarea
+  >
+  <p>Warning</p>
+  <lx-progress [lxPercent]="42" lxColor="warning"></lx-progress>
+  <textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="42" lxColor="warning"></lx-progress></textarea
+  >
+  <p>Custom</p>
+  <lx-progress [lxPercent]="42" lxColor="#6369ca"></lx-progress>
+  <textarea disabled rows="1" class="full-width my-8">
+    <lx-progress [lxPercent]="42" lxColor="#6369ca"></lx-progress></textarea
+  >
+</div>

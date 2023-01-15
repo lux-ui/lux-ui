@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { DividerPageComponent } from './pages/divider-page/divider-page.component';
 import { SelectPageComponent } from './pages/select-page/select-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
+import { ProgressPageComponent } from './pages/progress-page/progress-page.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CalendarPageComponent } from './pages/calendar-page/calendar-page.compo
     DividerPageComponent,
     SelectPageComponent,
     CalendarPageComponent,
+    ProgressPageComponent,
   ],
   imports: [CommonModule, LuxUiModule, RouterModule],
 })
