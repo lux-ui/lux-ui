@@ -1,3 +1,4 @@
+import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
 import { DividerPageComponent } from './pages/divider-page/divider-page.component';
 import { CarouselPageComponent } from './pages/carousel-page/carousel-page.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'divider', component: DividerPageComponent },
   { path: 'calendar', component: CalendarPageComponent },
   { path: 'progress', component: ProgressPageComponent },
+  { path: 'tabs', component: TabsPageComponent },
 ];
 
 @NgModule({

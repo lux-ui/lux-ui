@@ -10,6 +10,7 @@ import { DividerPageComponent } from './pages/divider-page/divider-page.componen
 import { SelectPageComponent } from './pages/select-page/select-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
 import { ProgressPageComponent } from './pages/progress-page/progress-page.component';
+import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProgressPageComponent } from './pages/progress-page/progress-page.compo
     SelectPageComponent,
     CalendarPageComponent,
     ProgressPageComponent,
+    TabsPageComponent,
   ],
   imports: [CommonModule, LuxUiModule, RouterModule],
 })

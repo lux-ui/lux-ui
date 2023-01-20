@@ -1,3 +1,4 @@
+import { TabsModule } from './../ui/tabs/tabs.module';
 import { CalendarModule } from './../ui/calendar/calendar.module';
 import { SelectModule } from './../ui/select/select.module';
 import { DividerModule } from './../ui/divider/divider.module';
@@ -22,6 +23,7 @@ import { ProgressModule } from '../ui/progress/progress.module';
     SelectModule,
     CalendarModule,
     ProgressModule,
+    TabsModule,
   ],
   exports: [
     MenuItemModule,
@@ -33,6 +35,7 @@ import { ProgressModule } from '../ui/progress/progress.module';
     SelectModule,
     CalendarModule,
     ProgressModule,
+    TabsModule,
   ],
 })
 export class CoreModule {}

@@ -1,0 +1,18 @@
+<div class="tabs-container">
+  <div class="tabs-nav">
+    <span
+      class="tabs-nav__element {{ activeTabId === i ? 'active' : '' }}"
+      *ngFor="let tab of tabs; let i = index"
+      (click)="changeTab(i)"
+    >
+      {{ tab.title }}
+    </span>
+  </div>
+  <div class="tabs">
+    <div class="tabs-viewport" #viewport>
+      <ng-container *ngFor="let tab of tabs">
+        <div class="tabs-content" [innerHTML]="tab.content"></div>
+      </ng-container>
+    </div>
+  </div>
+</div>

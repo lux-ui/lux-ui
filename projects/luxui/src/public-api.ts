@@ -30,3 +30,8 @@ export * from './lib/ui/select/select.module';
 
 export * from './lib/ui/progress/progress.component';
 export * from './lib/ui/progress/progress.module';
+
+export * from './lib/ui/tabs/tabs.component';
+export * from './lib/ui/tabs/tab/tab.component';
+export * from './lib/ui/tabs/tab-content.directive';
+export * from './lib/ui/tabs/tabs.module';
