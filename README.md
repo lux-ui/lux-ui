@@ -16,3 +16,21 @@ FREE Angular UI component library.
 ![image](https://img.shields.io/npm/dm/luxui?label=npm)
 
 </div>
+
+## 📦 Installation
+
+**We recommend using `@angular/cli` to install**. It not only makes development easier, but also allows you to take advantage of the rich ecosystem of angular packages and tooling.
+
+```bash
+$ ng new PROJECT_NAME
+$ cd PROJECT_NAME
+$ ng add luxui
+```
+
+> More information about `@angular/cli` [here](https://github.com/angular/angular-cli).
+
+You can also install `luxui` with npm or yarn
+
+```bash
+$ npm install luxui
+```
