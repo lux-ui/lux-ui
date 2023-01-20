@@ -34,3 +34,20 @@ You can also install `luxui` with npm or yarn
 ```bash
 $ npm install luxui
 ```
+
+## 🔨 Usage
+
+Import the component modules you want to use into your `app.module.ts` file and [feature modules](https://angular.io/guide/feature-modules).
+
+```ts
+import { LxCarouselModule } from 'ng-zorro-antd/carousel';
+
+@NgModule({
+  imports: [ LxCarouselModule ]
+})
+export class AppModule {
+}
+```
+
+> `@angular/cli` users won't have to worry about the things below but it's good to know.
+
