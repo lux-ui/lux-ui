@@ -53,3 +53,7 @@ export class AppModule {
 
 > `@angular/cli` users won't have to worry about the things below but it's good to know.
 
+## 🤝 Contributing
+
+We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lux-ui/lux-ui/blob/master/contributing.md) first. You can submit any ideas as [pull requests](https://github.com/lux-ui/lux-ui/pulls) or as [GitHub issues](https://github.com/lux-ui/lux-ui/issues).
+
