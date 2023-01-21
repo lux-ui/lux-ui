@@ -1,27 +1,59 @@
-# LuxUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
-## Development server
+<h1 align="center">
+LUX UI
+</h1>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div align="center">
 
-## Code scaffolding
+FREE Angular UI component library.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![image](https://img.shields.io/github/stars/lux-ui/lux-ui?style=social)
+![image](https://img.shields.io/npm/dm/luxui?label=npm)
 
-## Build
+</div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📦 Installation
 
-## Running unit tests
+LuxUI is constantly in development! Try it out now:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### NPM
 
-## Running end-to-end tests
+```sh
+npm install luxui
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**or**
 
-## Further help
+### Yarn
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+yarn add luxui
+```
+
+### Bower
+
+```sh
+bower install luxui
+```
+
+## 🔨 Usage
+
+Import the component modules you want to use into your `app.module.ts` file and [feature modules](https://angular.io/guide/feature-modules).
+
+```ts
+import { LxCarouselModule } from 'ng-zorro-antd/carousel';
+
+@NgModule({
+  imports: [ LxCarouselModule ]
+})
+export class AppModule {
+}
+```
+
+> `@angular/cli` users won't have to worry about the things below but it's good to know.
+
+## 🤝 Contributing
+
+We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lux-ui/lux-ui/blob/master/contributing.md) first. You can submit any ideas as [pull requests](https://github.com/lux-ui/lux-ui/pulls) or as [GitHub issues](https://github.com/lux-ui/lux-ui/issues).
+
