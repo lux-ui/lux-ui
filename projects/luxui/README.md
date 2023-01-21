@@ -1,24 +1,59 @@
-# Luxui
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
-## Code scaffolding
+<h1 align="center">
+LUX UI
+</h1>
 
-Run `ng generate component component-name --project luxui` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project luxui`.
-> Note: Don't forget to add `--project luxui` or else it will be added to the default project in your `angular.json` file. 
+<div align="center">
 
-## Build
+FREE Angular UI component library.
 
-Run `ng build luxui` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://img.shields.io/github/stars/lux-ui/lux-ui?style=social)
+![image](https://img.shields.io/npm/dm/luxui?label=npm)
 
-## Publishing
+</div>
 
-After building your library with `ng build luxui`, go to the dist folder `cd dist/luxui` and run `npm publish`.
+## 📦 Installation
 
-## Running unit tests
+LuxUI is constantly in development! Try it out now:
 
-Run `ng test luxui` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### NPM
 
-## Further help
+```sh
+npm install luxui
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**or**
+
+### Yarn
+
+```sh
+yarn add luxui
+```
+
+### Bower
+
+```sh
+bower install luxui
+```
+
+## 🔨 Usage
+
+Import the component modules you want to use into your `app.module.ts` file and [feature modules](https://angular.io/guide/feature-modules).
+
+```ts
+import { LxCarouselModule } from 'ng-zorro-antd/carousel';
+
+@NgModule({
+  imports: [ LxCarouselModule ]
+})
+export class AppModule {
+}
+```
+
+> `@angular/cli` users won't have to worry about the things below but it's good to know.
+
+## 🤝 Contributing
+
+We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lux-ui/lux-ui/blob/master/contributing.md) first. You can submit any ideas as [pull requests](https://github.com/lux-ui/lux-ui/pulls) or as [GitHub issues](https://github.com/lux-ui/lux-ui/issues).
+
