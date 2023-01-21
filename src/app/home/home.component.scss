@@ -1,0 +1,79 @@
+@import "settings/colors";
+
+.home-wrapper {
+  background: $color-primary-500;
+  background: linear-gradient(
+    180deg,
+    $color-primary-500 0%,
+    $color-primary-900 100%
+  );
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .logo {
+    font-size: 40px;
+    color: $color-gray-100;
+    cursor: pointer;
+
+    sup {
+      color: darken($color-secondary-500, 15%);
+      border: 2px solid $color-secondary-500;
+      font-size: 18px;
+      padding: 0 0.25rem;
+      margin-left: 0.25rem;
+      border-radius: 5px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 20px;
+
+    button {
+      color: $color-gray-100;
+      &:first-of-type {
+        margin-right: 16px;
+      }
+    }
+    a {
+      color: $color-gray-100;
+      svg {
+        fill: $color-gray-100;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .code-install {
+    padding: 14px 18px;
+    margin-top: 32px;
+    width: 450px;
+    height: 60px;
+    background: $color-secondary-800;
+    border-radius: 6px;
+    font-size: 18px;
+    color: $color-secondary-200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .install {
+      color: $color-success-300;
+    }
+
+    &:hover {
+      outline: 2px solid $color-success-300;
+
+      button {
+        display: block;
+      }
+    }
+
+    & button {
+      display: none;
+    }
+  }
+}
