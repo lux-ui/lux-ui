@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="/">
-    ![image](https://user-images.githubusercontent.com/27517889/213779528-79023eb5-caa7-4bd9-bbdb-c50af1a43af0.png)
-  </a>
-</p>
+
 
 <h1 align="center">
 LUX UI
