@@ -19,20 +19,26 @@ FREE Angular UI component library.
 
 ## 📦 Installation
 
-**We recommend using `@angular/cli` to install**. It not only makes development easier, but also allows you to take advantage of the rich ecosystem of angular packages and tooling.
+LuxUI is constantly in development! Try it out now:
 
-```bash
-$ ng new PROJECT_NAME
-$ cd PROJECT_NAME
-$ ng add luxui
+### NPM
+
+```sh
+npm install luxui
 ```
 
-> More information about `@angular/cli` [here](https://github.com/angular/angular-cli).
+**or**
 
-You can also install `luxui` with npm or yarn
+### Yarn
 
-```bash
-$ npm install luxui
+```sh
+yarn add luxui
+```
+
+### Bower
+
+```sh
+bower install luxui
 ```
 
 ## 🔨 Usage
