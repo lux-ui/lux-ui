@@ -1,0 +1,150 @@
+@import "../../../assets/styles/main.scss";
+
+.toast-wrapper {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+
+  &.full {
+    transform: unset;
+    opacity: 1;
+  }
+}
+
+.toast-container {
+  width: 350px;
+  min-height: 100px;
+  background-color: $color-primary-900;
+  color: $color-gray-100;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 16px 20px;
+  position: fixed;
+  z-index: 1001;
+  box-shadow: 0 0 12px $color-gray-500;
+  border-radius: 3px;
+  display: flex;
+
+  &.success {
+    background-color: $color-success-500;
+
+    .close-button {
+      svg {
+        fill: $color-success-100;
+      }
+    }
+
+    .icon {
+      background-color: $color-success-100;
+
+      & svg {
+        fill: $color-success-800;
+      }
+    }
+
+    h3 {
+      color: $color-success-200;
+    }
+  }
+
+  &.error {
+    background-color: $color-error-500;
+
+    .close-button {
+      svg {
+        fill: $color-error-100;
+      }
+    }
+
+    .icon {
+      background-color: $color-error-100;
+
+      & svg {
+        fill: $color-error-800;
+      }
+    }
+
+    h3 {
+      color: $color-error-200;
+    }
+  }
+
+  &.warning {
+    background-color: $color-warning-500;
+
+    .close-button {
+      svg {
+        fill: $color-warning-100;
+      }
+    }
+
+    .icon {
+      background-color: $color-warning-100;
+
+      & svg {
+        fill: $color-warning-800;
+      }
+    }
+
+    h3 {
+      color: $color-warning-200;
+    }
+  }
+
+  &.info {
+    background-color: $color-primary-500;
+
+    .close-button {
+      svg {
+        fill: $color-primary-100;
+      }
+    }
+
+    .icon {
+      background-color: $color-primary-100;
+
+      & svg {
+        fill: $color-primary-800;
+      }
+    }
+
+    h3 {
+      color: $color-primary-200;
+    }
+  }
+
+  .toast-content {
+    display: flex;
+    gap: 10px;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-weight: bolder;
+    }
+
+    span {
+      font-weight: 300;
+    }
+
+    h3 {
+      font-weight: 500;
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    & svg {
+      fill: $color-gray-100;
+    }
+  }
+}

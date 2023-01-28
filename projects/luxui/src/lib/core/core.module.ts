@@ -1,6 +1,8 @@
+import { NotificationModule } from './../ui/notification/notification.module';
+import { InputModule } from './../form/input/input.module';
 import { TabsModule } from './../ui/tabs/tabs.module';
 import { CalendarModule } from './../ui/calendar/calendar.module';
-import { SelectModule } from './../ui/select/select.module';
+import { SelectModule } from '../form/select/select.module';
 import { DividerModule } from './../ui/divider/divider.module';
 import { CarouselModule } from './../ui/carousel/carousel.module';
 import { CardModule } from './../ui/card/card.module';
@@ -24,6 +26,8 @@ import { ProgressModule } from '../ui/progress/progress.module';
     CalendarModule,
     ProgressModule,
     TabsModule,
+    InputModule,
+    NotificationModule,
   ],
   exports: [
     MenuItemModule,
@@ -36,6 +40,8 @@ import { ProgressModule } from '../ui/progress/progress.module';
     CalendarModule,
     ProgressModule,
     TabsModule,
+    InputModule,
+    NotificationModule,
   ],
 })
 export class CoreModule {}

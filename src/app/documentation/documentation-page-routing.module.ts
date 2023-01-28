@@ -1,3 +1,4 @@
+import { FormModule } from './form/form.module';
 import { SettingsRoutingModule } from './settings/settings-routing.module';
 import { ElementsRoutingModule } from './elements/elements-routing.module';
 import { DocumentationPageComponent } from './documentation-page.component';
@@ -22,6 +23,8 @@ const routes: Routes = [
         path: 'settings',
         loadChildren: () => SettingsRoutingModule,
       },
+      { path: 'form', loadChildren: () => FormModule },
+      { path: '', redirectTo: 'settings/colors', pathMatch: 'full' },
     ],
   },
 ];

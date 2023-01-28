@@ -7,10 +7,12 @@ import { CoreModule as LuxUiModule } from 'projects/luxui/src/public-api';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { RouterModule } from '@angular/router';
 import { DividerPageComponent } from './pages/divider-page/divider-page.component';
-import { SelectPageComponent } from './pages/select-page/select-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
 import { ProgressPageComponent } from './pages/progress-page/progress-page.component';
 import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
+import { PaginationPageComponent } from './pages/pagination-page/pagination-page.component';
+import { TooltipPageComponent } from './pages/tooltip-page/tooltip-page.component';
+import { NotificationPageComponent } from './pages/notification-page/notification-page.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
     MenuPageComponent,
     CarouselPageComponent,
     DividerPageComponent,
-    SelectPageComponent,
     CalendarPageComponent,
     ProgressPageComponent,
     TabsPageComponent,
+    PaginationPageComponent,
+    TooltipPageComponent,
+    NotificationPageComponent,
   ],
   imports: [CommonModule, LuxUiModule, RouterModule],
 })

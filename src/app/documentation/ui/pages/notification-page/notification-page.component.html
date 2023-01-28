@@ -1,0 +1,82 @@
+<h2>Notification</h2>
+<hr class="mb-64" />
+
+<p>Set on page <code>lx-notification</code></p>
+<textarea disabled rows="1" class="full-width my-16">
+<lx-notification></lx-notification>
+</textarea>
+
+<p>
+  Now using Notification Service you can set 4 different notification in chosen
+  place.
+</p>
+<textarea disabled rows="1" class="full-width my-16">
+constructor(private readonly _notificationService: NotificationService) {}
+</textarea>
+
+<div class="m-16">
+  <button class="lx-button" type="border" (click)="showSuccessNotification()">
+    Open Success Notification
+  </button>
+
+  <textarea disabled rows="8" class="full-width my-16">
+public showSuccessNotification(): void {
+  this._notificationService.showNotification(
+    'title',
+    'message',
+    'top-right',
+    NotificationType.SUCCESS
+  );
+}</textarea
+  >
+</div>
+<div class="m-16">
+  <button class="lx-button" type="border" (click)="showWarningNotification()">
+    Open Warning Notification
+  </button>
+
+  <textarea disabled rows="8" class="full-width my-16">
+public showSuccessNotification(): void {
+  this._notificationService.showNotification(
+    'title',
+    'message',
+    'bottom-left',
+    NotificationType.WARNING
+  );
+}</textarea
+  >
+</div>
+<div class="m-16">
+  <button class="lx-button" type="border" (click)="showErrorNotification()">
+    Open Error Notification
+  </button>
+
+  <textarea disabled rows="8" class="full-width my-16">
+public showSuccessNotification(): void {
+  this._notificationService.showNotification(
+    'title',
+    'message',
+    'top-left',
+    NotificationType.ERROR
+  );
+}</textarea
+  >
+</div>
+<div class="m-16">
+  <button class="lx-button" type="border" (click)="showInfoNotification()">
+    Open Info Notification
+  </button>
+
+  <textarea disabled rows="8" class="full-width my-16">
+public showSuccessNotification(): void {
+  this._notificationService.showNotification(
+    'title',
+    'message',
+    'bottom-right',
+    NotificationType.INFO
+  );
+}</textarea
+  >
+</div>
+
+<lx-notification></lx-notification>

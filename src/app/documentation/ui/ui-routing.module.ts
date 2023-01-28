@@ -1,3 +1,6 @@
+import { NotificationPageComponent } from './pages/notification-page/notification-page.component';
+import { TooltipPageComponent } from './pages/tooltip-page/tooltip-page.component';
+import { PaginationPageComponent } from './pages/pagination-page/pagination-page.component';
 import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
 import { DividerPageComponent } from './pages/divider-page/divider-page.component';
@@ -18,6 +21,9 @@ const routes: Routes = [
   { path: 'calendar', component: CalendarPageComponent },
   { path: 'progress', component: ProgressPageComponent },
   { path: 'tabs', component: TabsPageComponent },
+  { path: 'pagination', component: PaginationPageComponent },
+  { path: 'tooltip', component: TooltipPageComponent },
+  { path: 'notification', component: NotificationPageComponent },
 ];
 
 @NgModule({
