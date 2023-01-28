@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DocumentationRoutingModule } from './documentation/documentation-page-routing.module';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'documentation',
-    pathMatch: 'full',
+    component: HomeComponent,
   },
 ];
 

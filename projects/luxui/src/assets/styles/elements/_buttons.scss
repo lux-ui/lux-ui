@@ -16,6 +16,7 @@ button {
   text-decoration: none;
   @extend .cursor-pointer;
   user-select: none;
+  background: none;
 
   @include button(
     $color-secondary-100,
@@ -61,6 +62,7 @@ button {
 
   &[type="border"] {
     border: 2px solid $color-primary-400;
+    background: none;
 
     &:hover {
       border: 2px solid $color-primary-900;

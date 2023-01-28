@@ -42,7 +42,7 @@ bower install luxui
 Import the component modules you want to use into your `app.module.ts` file and [feature modules](https://angular.io/guide/feature-modules).
 
 ```ts
-import { LxCarouselModule } from 'ng-zorro-antd/carousel';
+import { LxCarouselModule } from 'luxui/carousel';
 
 @NgModule({
   imports: [ LxCarouselModule ]
