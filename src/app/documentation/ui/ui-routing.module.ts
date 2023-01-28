@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { MenuPageComponent } from './pages/menu-page/menu-page.component';
 import { ProgressPageComponent } from './pages/progress-page/progress-page.component';
+import { LoadingSpinnerPageComponent } from './pages/loading-spinner-page/loading-spinner-page.component';
 
 const routes: Routes = [
   { path: 'rate', component: RatePageComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'pagination', component: PaginationPageComponent },
   { path: 'tooltip', component: TooltipPageComponent },
   { path: 'notification', component: NotificationPageComponent },
+  { path: 'spinner', component: LoadingSpinnerPageComponent },
 ];
 
 @NgModule({
