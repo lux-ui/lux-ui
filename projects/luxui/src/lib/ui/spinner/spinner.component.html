@@ -1,1 +1,9 @@
-<p>loading-spinner works!</p>
+<div
+  class="spinner-container"
+  style="--spinner-color: {{ spinnerColor }}; --text-color: {{ textColor }}"
+>
+  <span class="spinner"></span>
+  <div class="loader-text" *ngIf="text">
+    {{ text }}
+  </div>
+</div>
