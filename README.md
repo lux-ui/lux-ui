@@ -13,6 +13,11 @@ FREE Angular UI component library.
 
 </div>
 
+## 🧭 Necessery Links
+Webpage: https://lux-ui.vercel.app
+Github: https://github.com/lux-ui/lux-ui
+NPM: https://www.npmjs.com/package/luxui
+
 ## 📦 Installation
 
 LuxUI is constantly in development! Try it out now:
