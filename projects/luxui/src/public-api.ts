@@ -42,3 +42,6 @@ export * from './lib/form/select/select.module';
 export * from './lib/ui/notification/notification.component';
 export * from './lib/ui/notification/notification.module';
 export * from './lib/ui/notification/notification.service';
+
+export * from './lib/ui/spinner/spinner.component';
+export * from './lib/ui/spinner/spinner.module';

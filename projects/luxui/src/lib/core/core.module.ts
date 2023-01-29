@@ -1,3 +1,4 @@
+import { SpinnerModule } from './../ui/spinner/spinner.module';
 import { NotificationModule } from './../ui/notification/notification.module';
 import { InputModule } from './../form/input/input.module';
 import { TabsModule } from './../ui/tabs/tabs.module';
@@ -28,6 +29,7 @@ import { ProgressModule } from '../ui/progress/progress.module';
     TabsModule,
     InputModule,
     NotificationModule,
+    SpinnerModule,
   ],
   exports: [
     MenuItemModule,
@@ -42,6 +44,7 @@ import { ProgressModule } from '../ui/progress/progress.module';
     TabsModule,
     InputModule,
     NotificationModule,
+    SpinnerModule,
   ],
 })
 export class CoreModule {}

@@ -1,0 +1,50 @@
+<h2>Loading Spinners</h2>
+<hr class="mb-64" />
+
+<div class="show-blocks">
+  <div class="block">
+    <h3>Classic Spinner</h3>
+    <div class="block-content">
+      <lx-spinner
+        type="classic"
+        spinnerColor="#555"
+        text="Some placeholder text"
+      ></lx-spinner>
+    </div>
+  </div>
+  <div class="block">
+    <h3>Colored Spinner</h3>
+    <div class="block-content">
+      <lx-spinner spinnerColor="#5F46C3"></lx-spinner>
+    </div>
+  </div>
+</div>
+
+<textarea disabled rows="5" class="full-width my-16">
+<lx-spinner
+  type="classic"
+  spinnerColor="#555"
+  text="Some placeholder text"
+></lx-spinner></textarea
+>
+
+<table class="doc-table mb-64">
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Default</th>
+  </tr>
+  <tr *ngFor="let prop of props">
+    <td>
+      <span>{{ prop.name }}</span>
+    </td>
+    <td>{{ prop.desc }}</td>
+    <td>
+      <span>{{ prop.type }}</span>
+    </td>
+    <td>
+      <span>{{ prop.default }}</span>
+    </td>
+  </tr>
+</table>

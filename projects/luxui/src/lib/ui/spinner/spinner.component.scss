@@ -1,0 +1,34 @@
+@import "../../../assets/styles/main.scss";
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+
+  .spinner {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 3px solid var(--spinner-color);
+    border-bottom: 3px solid var(--spinner-color);
+    animation: spin 1s linear infinite;
+  }
+
+  .loader-text {
+    text-align: center;
+    max-width: 500px;
+    color: var(--text-color);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

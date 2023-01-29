@@ -13,6 +13,7 @@ import { TabsPageComponent } from './pages/tabs-page/tabs-page.component';
 import { PaginationPageComponent } from './pages/pagination-page/pagination-page.component';
 import { TooltipPageComponent } from './pages/tooltip-page/tooltip-page.component';
 import { NotificationPageComponent } from './pages/notification-page/notification-page.component';
+import { LoadingSpinnerPageComponent } from './pages/loading-spinner-page/loading-spinner-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NotificationPageComponent } from './pages/notification-page/notificatio
     PaginationPageComponent,
     TooltipPageComponent,
     NotificationPageComponent,
+    LoadingSpinnerPageComponent,
   ],
   imports: [CommonModule, LuxUiModule, RouterModule],
 })

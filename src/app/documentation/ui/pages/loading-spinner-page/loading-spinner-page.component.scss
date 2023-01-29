@@ -1,0 +1,30 @@
+.show-blocks {
+  display: grid;
+  justify-content: center;
+  height: 300px;
+  grid-template-columns: repeat(auto-fit, 215px);
+  grid-auto-rows: 215px;
+  gap: 20px;
+
+  .block {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+    h3 {
+      margin-top: 10px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    &-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
